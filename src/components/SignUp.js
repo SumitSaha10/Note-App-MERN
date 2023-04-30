@@ -37,7 +37,7 @@ const handleSubmit = async(e)=>{
   return (
     <>
     <div className='container mt-3'>
-    <h2>Create an account to use iNotebook</h2>
+    <h2>Create an account to use Mynotebook</h2>
     <form onSubmit={handleSubmit}>
       <div className="form-floating mb-3">
   <input type="text" className="form-control" id="name" name='name' value={credentials.name} placeholder="Name" onChange={onChange} minLength={3} required/>
