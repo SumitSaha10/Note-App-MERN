@@ -10,7 +10,7 @@ const fetchuser = (req, res, next) => {
     try {
 
         const data = jwt.verify(token, JWT_SECRET);
-        req.id = data.user._id;
+        req.id = data.user.id;
         next();
     } catch (error) {
         res.status(404).send({ error });
